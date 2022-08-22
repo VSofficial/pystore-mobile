@@ -13,6 +13,8 @@
 		FE555D1A28B3B57F0038568F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE555D1928B3B57F0038568F /* Preview Assets.xcassets */; };
 		FE555D1C28B3B57F0038568F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE555D1B28B3B57F0038568F /* Persistence.swift */; };
 		FE555D1F28B3B57F0038568F /* pystore_mobile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE555D1D28B3B57F0038568F /* pystore_mobile.xcdatamodeld */; };
+		FE555D2628B3B8670038568F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE555D2528B3B8670038568F /* HomeView.swift */; };
+		FE555D2828B3B9410038568F /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE555D2728B3B9410038568F /* SideMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		FE555D1928B3B57F0038568F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FE555D1B28B3B57F0038568F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		FE555D1E28B3B57F0038568F /* pystore_mobile.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = pystore_mobile.xcdatamodel; sourceTree = "<group>"; };
+		FE555D2528B3B8670038568F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FE555D2728B3B9410038568F /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +59,10 @@
 		FE555D1128B3B57C0038568F /* pystore-mobile */ = {
 			isa = PBXGroup;
 			children = (
+				FE555D2528B3B8670038568F /* HomeView.swift */,
 				FE555D1228B3B57C0038568F /* pystore_mobileApp.swift */,
 				FE555D1428B3B57C0038568F /* ContentView.swift */,
+				FE555D2728B3B9410038568F /* SideMenu.swift */,
 				FE555D1628B3B57F0038568F /* Assets.xcassets */,
 				FE555D1B28B3B57F0038568F /* Persistence.swift */,
 				FE555D1D28B3B57F0038568F /* pystore_mobile.xcdatamodeld */,
@@ -146,6 +152,8 @@
 				FE555D1F28B3B57F0038568F /* pystore_mobile.xcdatamodeld in Sources */,
 				FE555D1C28B3B57F0038568F /* Persistence.swift in Sources */,
 				FE555D1528B3B57C0038568F /* ContentView.swift in Sources */,
+				FE555D2828B3B9410038568F /* SideMenu.swift in Sources */,
+				FE555D2628B3B8670038568F /* HomeView.swift in Sources */,
 				FE555D1328B3B57C0038568F /* pystore_mobileApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
