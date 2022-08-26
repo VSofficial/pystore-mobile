@@ -17,6 +17,9 @@
 		FE555D2828B3B9410038568F /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE555D2728B3B9410038568F /* SideMenu.swift */; };
 		FE601AF628B579E9007B33F7 /* AppWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE601AF528B579E9007B33F7 /* AppWindow.swift */; };
 		FE601AF828B655A1007B33F7 /* AppPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE601AF728B655A1007B33F7 /* AppPreview.swift */; };
+		FE601AFA28B82193007B33F7 /* AppPreviewAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE601AF928B82193007B33F7 /* AppPreviewAPI.swift */; };
+		FE601B0628B839BD007B33F7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FE601B0528B839BD007B33F7 /* Alamofire */; };
+		FE601B0928B839CE007B33F7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FE601B0828B839CE007B33F7 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,7 @@
 		FE555D2728B3B9410038568F /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		FE601AF528B579E9007B33F7 /* AppWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWindow.swift; sourceTree = "<group>"; };
 		FE601AF728B655A1007B33F7 /* AppPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPreview.swift; sourceTree = "<group>"; };
+		FE601AF928B82193007B33F7 /* AppPreviewAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPreviewAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE601B0628B839BD007B33F7 /* Alamofire in Frameworks */,
+				FE601B0928B839CE007B33F7 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +74,7 @@
 				FE555D1228B3B57C0038568F /* pystore_mobileApp.swift */,
 				FE555D1428B3B57C0038568F /* ContentView.swift */,
 				FE601AF728B655A1007B33F7 /* AppPreview.swift */,
+				FE601AF928B82193007B33F7 /* AppPreviewAPI.swift */,
 				FE555D2728B3B9410038568F /* SideMenu.swift */,
 				FE555D1628B3B57F0038568F /* Assets.xcassets */,
 				FE555D1B28B3B57F0038568F /* Persistence.swift */,
@@ -101,6 +108,10 @@
 			dependencies = (
 			);
 			name = "pystore-mobile";
+			packageProductDependencies = (
+				FE601B0528B839BD007B33F7 /* Alamofire */,
+				FE601B0828B839CE007B33F7 /* Alamofire */,
+			);
 			productName = "pystore-mobile";
 			productReference = FE555D0F28B3B57C0038568F /* pystore-mobile.app */;
 			productType = "com.apple.product-type.application";
@@ -129,6 +140,10 @@
 				Base,
 			);
 			mainGroup = FE555D0628B3B57C0038568F;
+			packageReferences = (
+				FE601B0428B839BD007B33F7 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				FE601B0728B839CE007B33F7 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = FE555D1028B3B57C0038568F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -161,6 +176,7 @@
 				FE555D2828B3B9410038568F /* SideMenu.swift in Sources */,
 				FE555D2628B3B8670038568F /* HomeView.swift in Sources */,
 				FE601AF628B579E9007B33F7 /* AppWindow.swift in Sources */,
+				FE601AFA28B82193007B33F7 /* AppPreviewAPI.swift in Sources */,
 				FE601AF828B655A1007B33F7 /* AppPreview.swift in Sources */,
 				FE555D1328B3B57C0038568F /* pystore_mobileApp.swift in Sources */,
 			);
@@ -361,6 +377,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FE601B0428B839BD007B33F7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		FE601B0728B839CE007B33F7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FE601B0528B839BD007B33F7 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FE601B0428B839BD007B33F7 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		FE601B0828B839CE007B33F7 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FE601B0428B839BD007B33F7 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		FE555D1D28B3B57F0038568F /* pystore_mobile.xcdatamodeld */ = {

@@ -6,10 +6,20 @@
 //
 
 import SwiftUI
+import Alamofire
+
 
 struct AppPreview: View {
+    
+    let apiToContact = "https://itunes.apple.com/us/rss/topmovies/limit=25/json"
+    // This code will call the iTunes top 25 movies endpoint listed above
+  
+    
     var body: some View {
+     
         VStack(spacing:20) {
+            
+            
             HStack(spacing:30) {
                 Text("Logo")
                 VStack {
