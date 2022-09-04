@@ -8,32 +8,28 @@
 import Foundation
 import Alamofire
 
+struct Book: Codable, Identifiable {
+    var id = UUID()
+    var userd : Int
+    var title: String
+    var body: String
+}
 
-func getMethod() {
-    AF.request("http://dummy.restapiexample.com/api/v1/employees", parameters: nil, headers: nil).validate(statusCode: 200 ..< 299).responseData { response in
-        switch response.result {
-            case .success(let data):
-                do {
-                    guard let jsonObject = try JSONSerialization.jsonObject(with: data) as? [String: Any] else {
-                        print("Error: Cannot convert data to JSON object")
-                        return
-                    }
-                    guard let prettyJsonData = try? JSONSerialization.data(withJSONObject: jsonObject, options: .prettyPrinted) else {
-                        print("Error: Cannot convert JSON object to Pretty JSON data")
-                        return
-                    }
-                    guard let prettyPrintedJson = String(data: prettyJsonData, encoding: .utf8) else {
-                        print("Error: Could print JSON in String")
-                        return
-                    }
-                    
-                    print(prettyPrintedJson)
-                } catch {
-                    print("Error: Trying to convert JSON data to string")
-                    return
-                }
-            case .failure(let error):
-                print(error)
+class Api : ObservableObject{
+    @Published var books = [Book]()
+    
+    func loadData(completion:@escaping ([Book]) -> ()) {
+        guard let url = URL(string: "https://jsonplaceholder.typicode.com/posts") else {
+            print("Invalid url...")
+            return
         }
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            let books = try! JSONDecoder().decode([Book].self, from: data!)
+            print(books)
+            DispatchQueue.main.async {
+                completion(books)
+            }
+        }.resume()
+        
     }
 }

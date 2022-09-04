@@ -13,7 +13,7 @@ struct pystore_mobileApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ViewFile()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

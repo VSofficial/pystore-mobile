@@ -12,7 +12,7 @@ struct AppWindow: View {
         VStack() {
                 Image("face")
             HStack() {
-                Text("One App")
+                Text("App Name")
             }
         }
     }

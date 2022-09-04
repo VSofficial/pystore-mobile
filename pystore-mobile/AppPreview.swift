@@ -18,21 +18,38 @@ struct AppPreview: View {
     var body: some View {
      
         VStack(spacing:20) {
-            
-            
-            HStack(spacing:30) {
-                Text("Logo")
-                VStack {
-                    Text("App Title")
-                    Text("Description")
+            ZStack() {
+                Image("bgr")
+                          .resizable()
+                          .edgesIgnoringSafeArea(.all)
+                          .frame(minHeight: 20, maxHeight:350)
+                VStack(){
+                    HStack(spacing:30) {
+                        Image("face")
+                        VStack {
+                            Text("App Title")
+                            Text("Description")
+                        }
+                    }
                 }
+                
             }
+          
             HStack {
                 Text("Rating")
                 Text("Download Size")
                 Text("Downloads")
             }
+            
+            HStack {
+                Text("Web")
+            }
+            
+            HStack {
+                Text("Screenshots")
+            }
         }
+        
     }
 }
 

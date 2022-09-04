@@ -20,6 +20,7 @@
 		FE601AFA28B82193007B33F7 /* AppPreviewAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE601AF928B82193007B33F7 /* AppPreviewAPI.swift */; };
 		FE601B0628B839BD007B33F7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FE601B0528B839BD007B33F7 /* Alamofire */; };
 		FE601B0928B839CE007B33F7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FE601B0828B839CE007B33F7 /* Alamofire */; };
+		FE601B0D28B92C99007B33F7 /* ViewFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE601B0C28B92C99007B33F7 /* ViewFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		FE601AF528B579E9007B33F7 /* AppWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWindow.swift; sourceTree = "<group>"; };
 		FE601AF728B655A1007B33F7 /* AppPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPreview.swift; sourceTree = "<group>"; };
 		FE601AF928B82193007B33F7 /* AppPreviewAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPreviewAPI.swift; sourceTree = "<group>"; };
+		FE601B0C28B92C99007B33F7 /* ViewFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				FE601AF528B579E9007B33F7 /* AppWindow.swift */,
 				FE555D1228B3B57C0038568F /* pystore_mobileApp.swift */,
 				FE555D1428B3B57C0038568F /* ContentView.swift */,
+				FE601B0C28B92C99007B33F7 /* ViewFile.swift */,
 				FE601AF728B655A1007B33F7 /* AppPreview.swift */,
 				FE601AF928B82193007B33F7 /* AppPreviewAPI.swift */,
 				FE555D2728B3B9410038568F /* SideMenu.swift */,
@@ -174,6 +177,7 @@
 				FE555D1C28B3B57F0038568F /* Persistence.swift in Sources */,
 				FE555D1528B3B57C0038568F /* ContentView.swift in Sources */,
 				FE555D2828B3B9410038568F /* SideMenu.swift in Sources */,
+				FE601B0D28B92C99007B33F7 /* ViewFile.swift in Sources */,
 				FE555D2628B3B8670038568F /* HomeView.swift in Sources */,
 				FE601AF628B579E9007B33F7 /* AppWindow.swift in Sources */,
 				FE601AFA28B82193007B33F7 /* AppPreviewAPI.swift in Sources */,
