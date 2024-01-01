@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE1220932AD1DC9A00EAA811 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE1220922AD1DC9A00EAA811 /* Main.storyboard */; };
 		FEE2432E2AD0A202008D713C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE2432D2AD0A202008D713C /* AppDelegate.swift */; };
 		FEE243302AD0A202008D713C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE2432F2AD0A202008D713C /* SceneDelegate.swift */; };
 		FEE243322AD0A202008D713C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE243312AD0A202008D713C /* ViewController.swift */; };
-		FEE243352AD0A202008D713C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEE243332AD0A202008D713C /* Main.storyboard */; };
 		FEE243372AD0A203008D713C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEE243362AD0A203008D713C /* Assets.xcassets */; };
 		FEE2433A2AD0A203008D713C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEE243382AD0A203008D713C /* LaunchScreen.storyboard */; };
+		FEE243452AD0A253008D713C /* MainScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE243432AD0A253008D713C /* MainScreenVC.swift */; };
+		FEE243462AD0A253008D713C /* MainScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEE243442AD0A253008D713C /* MainScreenVC.xib */; };
+		FEE2434D2AD0AA83008D713C /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE2434B2AD0AA83008D713C /* CollectionViewCell.swift */; };
+		FEE2434E2AD0AA83008D713C /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEE2434C2AD0AA83008D713C /* CollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE1220922AD1DC9A00EAA811 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		FEE2432A2AD0A202008D713C /* pystore-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pystore-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEE2432D2AD0A202008D713C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEE2432F2AD0A202008D713C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FEE243312AD0A202008D713C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FEE243342AD0A202008D713C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FEE243362AD0A203008D713C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEE243392AD0A203008D713C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEE2433B2AD0A203008D713C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEE243432AD0A253008D713C /* MainScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenVC.swift; sourceTree = "<group>"; };
+		FEE243442AD0A253008D713C /* MainScreenVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainScreenVC.xib; sourceTree = "<group>"; };
+		FEE2434B2AD0AA83008D713C /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		FEE2434C2AD0AA83008D713C /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,35 @@
 		FEE2432C2AD0A202008D713C /* pystore-mobile */ = {
 			isa = PBXGroup;
 			children = (
+				FE1220922AD1DC9A00EAA811 /* Main.storyboard */,
+				FEE243412AD0A217008D713C /* ViewControllers */,
 				FEE2432D2AD0A202008D713C /* AppDelegate.swift */,
 				FEE2432F2AD0A202008D713C /* SceneDelegate.swift */,
 				FEE243312AD0A202008D713C /* ViewController.swift */,
-				FEE243332AD0A202008D713C /* Main.storyboard */,
 				FEE243362AD0A203008D713C /* Assets.xcassets */,
 				FEE243382AD0A203008D713C /* LaunchScreen.storyboard */,
 				FEE2433B2AD0A203008D713C /* Info.plist */,
 			);
 			path = "pystore-mobile";
+			sourceTree = "<group>";
+		};
+		FEE243412AD0A217008D713C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FEE243422AD0A22C008D713C /* MainScreenVC */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FEE243422AD0A22C008D713C /* MainScreenVC */ = {
+			isa = PBXGroup;
+			children = (
+				FEE243432AD0A253008D713C /* MainScreenVC.swift */,
+				FEE243442AD0A253008D713C /* MainScreenVC.xib */,
+				FEE2434B2AD0AA83008D713C /* CollectionViewCell.swift */,
+				FEE2434C2AD0AA83008D713C /* CollectionViewCell.xib */,
+			);
+			path = MainScreenVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +154,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEE2433A2AD0A203008D713C /* LaunchScreen.storyboard in Resources */,
+				FE1220932AD1DC9A00EAA811 /* Main.storyboard in Resources */,
 				FEE243372AD0A203008D713C /* Assets.xcassets in Resources */,
-				FEE243352AD0A202008D713C /* Main.storyboard in Resources */,
+				FEE243462AD0A253008D713C /* MainScreenVC.xib in Resources */,
+				FEE2434E2AD0AA83008D713C /* CollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,21 +170,15 @@
 			files = (
 				FEE243322AD0A202008D713C /* ViewController.swift in Sources */,
 				FEE2432E2AD0A202008D713C /* AppDelegate.swift in Sources */,
+				FEE2434D2AD0AA83008D713C /* CollectionViewCell.swift in Sources */,
 				FEE243302AD0A202008D713C /* SceneDelegate.swift in Sources */,
+				FEE243452AD0A253008D713C /* MainScreenVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FEE243332AD0A202008D713C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FEE243342AD0A202008D713C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FEE243382AD0A203008D713C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
